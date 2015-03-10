@@ -1,0 +1,21 @@
+{
+  "name": "smart-jwt",
+  "version": "0.0.1",
+  "description": "smart project jwt demo",
+  "main": "server.js",
+  "dependencies": {
+    "angular": "^1.3.14",
+    "express-jwt": "^2.0.0"
+  },
+  "devDependencies": {
+    "angular": "^1.3.14",
+    "express": "^4.12.2",
+    "faker": "1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Aiden Huang",
+  "license": "MIT"
+}

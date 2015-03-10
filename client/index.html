@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html  ng-app="HomeCtrl">
+<head>
+	<meta charset="UTF-8">
+	<title>smart-jwt-Clients</title>
+</head>
+<body ng-controller="homeCtrl as hc">
+	
+	<h1>get random data</h1>
+		{{hc.hello}}
+	
+	<div>
+		<form  ng-submit="hc.login(hc.username,hc.password)">
+			<label >Username:
+				<input type="text" ng-model="hc.username">
+			</label></br>
+
+			<label >Password:
+				<input type="text" ng-model="hc.password">
+			</label>
+			
+			<button type="submit">Login</button>
+
+		</form>
+	</div>
+	<button ng-click="hc.logout()">logout</button>
+
+
+
+	<h1>hello {{hc.user.username}}</h1>
+
+	<div>
+		<button ng-click="hc.getRandomUser()">get data</button>
+		<pre ng-bind="hc.randomUser | json"></pre>
+	</div>
+	
+
+
+	
+
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
